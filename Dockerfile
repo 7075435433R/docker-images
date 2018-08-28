@@ -8,4 +8,5 @@ CMD mv apache-tomcat-9.0.11 tomcat
 COPY content.xml /usr/local/tomcat/content.xml
 COPY tomcat-users.xml /usr/local/tomcat/conf/tomcat-users.xml
 COPY lib /usr/local/tomcat/lib
+COPY META-INF /usr/local/tomcat/webapps/manager/META-INF
 CMD ./tomcat/bin/startup.sh
