@@ -1,4 +1,4 @@
-FROM centos7
+FROM centos
 MAINTAINER satish736
 WORKDIR /usr/local/
 RUN yum install java -y
