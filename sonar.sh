@@ -1,7 +1,7 @@
 #!/bin/bash
 ## Downloading SonarQube 
 VER=$(curl -s https://binaries.sonarsource.com/Distribution/sonarqube/  | tail -n 10 | awk -F '[<,>]' '{print $5}' | grep zip$ |tail -1)
-URL="https://binaries.sonarsource.com/Distribution/sonarqube//$VER"
+URL="https://binaries.sonarsource.com/Distribution/sonarqube/$VER"
 TFILE="/opt/$VER"
 TDIR=$(echo $TFILE|sed -e 's/.zip//')
 rm -rf /opt/sonarqube
